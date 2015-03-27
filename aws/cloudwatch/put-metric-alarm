@@ -1,0 +1,1 @@
+ aws cloudwatch put-metric-alarm --metric-name MinecraftErrors --statistic Sum --period 300 --evaluation-periods 1 --threshold 0.0 --comparison-operator GreaterThanOrEqualToThreshold --alarm-name MCErrors --namespace LogMetrics --alarm-actions arn:aws:sns:us-east-1:267143213584:Minecraft

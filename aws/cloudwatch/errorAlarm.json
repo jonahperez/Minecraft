@@ -1,0 +1,28 @@
+{
+    "MetricAlarms": [
+        {
+            "EvaluationPeriods": 1,
+            "AlarmArn": "arn:aws:cloudwatch:us-west-2:267143213584:alarm:MCErrors",
+            "StateUpdatedTimestamp": "2015-03-27T20:59:48.054Z",
+            "AlarmConfigurationUpdatedTimestamp": "2015-03-27T20:59:48.054Z",
+            "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+            "AlarmActions": [
+                "arn:aws:sns:us-east-1:267143213584:Minecraft"
+            ],
+            "AlarmDescription": "MCErrrors",
+            "Namespace": "LogMetrics",
+            "Period": 300,
+            "StateValue": "INSUFFICIENT_DATA",
+            "Threshold": 0.0,
+            "AlarmName": "MCErrors",
+            "Dimensions": [],
+            "Statistic": "Sum",
+            "StateReason": "Unchecked: Initial alarm creation",
+            "InsufficientDataActions": [],
+            "OKActions": [],
+            "ActionsEnabled": true,
+            "MetricName": "MinecraftErrors"
+        }
+    ]
+}
+
