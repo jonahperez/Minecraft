@@ -1,0 +1,42 @@
+<html>
+<head>
+</head>
+<body>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.20.min.js"></script>
+<h1>Server Status</h1>
+
+<div id="elliots" class="alarm_state">
+Jonah's Minecraft Server
+</div>
+<script language="javascript">
+AWS.config.update({accessKeyId: 'AKIAISPXWWV4Y572QH2Q', secretAccessKey: '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'});
+AWS.config.region='us-east-1';
+var cloudwatch = new AWS.CloudWatch();
+var alarms= { AlarmNames: [ 'awsroute53-IsMinecraftUp-High-Health-Check-Status' ]};
+
+function colorServerState (element,  callback) {
+        cloudwatch.describeAlarms(alarms, function(err, data)
+                {
+                        if (err) console.log(err, err.stack); // an error occured
+                        else {
+                                callback(element, data.MetricAlarms[0].StateValue);
+                        }
+                }
+        )
+};
+
+
+function colorElement(element, state) {
+	if(state == "OK") {
+		element.style.color = "green";
+	} else {
+		element.style.color = "red";
+	}
+}
+
+colorServerState(document.getElementById("elliots"),colorElement);
+
+
+</script>
+</body>
+</html>
