@@ -1,0 +1,111 @@
+Ignition timing a 2-stroke
+
+if you jam something down the spark plug hole, it will stop the piston from coming up to full height as the crank turns. The thing is, it will stop the piston at the mirror image of degrees if you rotate the motor backwards too.
+
+for example. if the stop (thing jammed down the spark plug hole) stops the piston at 15deg BTDC (before top dead center) while rotating the motor forward, it will stop the piston at 15 deg ATDC when rotating the motor backwards. if you pick an arbitrary point on the flywheel and mark off where it stops forward and backwards, the point ½ way between those marks is TDC (Top Dead Center). you can mark that point on the case or bolt a piece of flexible wire to the case and point it at TDC.
+
+To get an accurate timing indication, you should attach a degree wheel to the flywheel or find a mark on the flywheel indicating where you want the spark to start. This point is marked on the flywheel as F on most 4 strokes and on some 2 strokes. The next step is to find where it’s supposed to fire (some time before TDC) and then make sure the points open right at that mark.
+
+39 minutes ago
+https://www.jonahperez.com/timing.txt
+www.jonahperez.com
+www.jonahperez.com
+let me know if it doesn't make sense
+
+the finding tdc part makes sense.. but dont the timing marks have a certain measurement as to where they close to fire the spark plug? ive been watching videos and it kinda makes sense, like how people use the dial indicater to find tdc and then each bike has a speciific measurement of where its supposed to fire.. points closed = spark plug fire, yes? i havent taken the cover off yet to look at what ive got in there but from my understanding i need to find the points and measure the gap with a feeler gauge. once the points are determined to be at the correct gap, then find tdc?
+so... points, right?
+
+after tcd is found, then i can adjust the timing? in theory, it sounds relatively easy, but im not sure i totally understand the "measurements" and how many rotations and yadda yadda
+with points, the spark fires when the points OPEN
+
+oh
+
+oops
+there's a big capacitor (called a condenser in automotive terms) which holds a big static charge. there's also a coil which has a bunch of juice flowing through it when the points are closed. while that coil is charged, it holds the static charge in the condenser
+when the points open, no more magnetic field, condenser let's fly with a big-o-jolt to ark a spark
+you want that spark to come somewhere around 17 deg BTDC
+before because you want the flame to start burning with enough time to spread across the piston before the piston starts to decennd
+you want your  maximum pressure on the piston when the crank pin is at 90 degrees to the connecting rod
+(getting way to technical here, sorry)
+so the best timing tends to be between 20 and 7 degrees BTDC
+at faster RPMs, it takes less time for the flame to move (also, you have less time) so you can use an ignition advance (some times this is a mechanical flywheel device)
+
+i like the technical. we learned about condensers and stuff in my small engine class. but for some reason i was still unclear on it. break it down for me however much you want to.
+
+so what is the "stop" thing that you put in the spark plug hole?
+it's a metal bar with the thread pitch of the spark plug
+
+the dial indicator? or are there other things to use?
+you just literally use it to stop the piston from making a complete cycle
+if you don't have a stop, you can use a dial indicator and just make sure you use the same measurement going forward and backward.
+
+wouldnt it be more accurate to use the dial indicator?
+if you "stop" the piston at .025" in one direction, do the same in the other and the point in between is TDC
+the stop is pretty damn accurate
+piston can't go past it
+no wiggle room
+
+gotcha.
+depends on what you have on hand
+
+i have nothing. ha
+what spark plug does that bike take (or what bike is it)?
+
+"so the best timing tends to be between 20 and 7 degrees BTDC" is that true for all bikes?
+
+its a 1972 suzuki tc 125
+it's a general assessment of engine timing
+
+NGK B8HS
+
+you know, now that im thinking about it, i never even checked to see if the spark plug has the proper gap. its a new plug, but i just put it right in
+http://www.ngk.com/product.aspx?zpid=9251
+14mm threaded rod will work for a stop
+i think it's a 1.0 thread pitch
+nope 1.25
+http://www.summitracing.com/parts/pro-66792?seid=srese1&gclid=CjwKEAjw3_ypBRCwoKqKw5P9wgsSJAAbi2K9sl7lzbukrd5Uko9iN6YT7IMvVYN40fRHLPM_hWdwwxoCXZvw_wcB
+that's the fancy one
+
+so if i had one of those things, i could find tdc. but how do i know what the degree measurement is?
+http://www.summitracing.com/parts/sum-g1057/overview/
+Summit Racing® Cam Degree Wheels SUM-G1057
+www.summitracing.com
+
+youre saying if i find tdc, to adjust the timing to 17 degrees before tdc for best results?
+you need to find the spec for the bike
+you can print a degree wheel to get close
+
+Oh! thats the degree wheel youre talkig about
+
+you just put that over the top and match it to the tdc mark
+yup
+http://en.wikipedia.org/wiki/1981_Suzuki_TS125
+1981 Suzuki TS125 - Wikipedia, the free encyclopedia
+en.wikipedia.org
+looks like they're calling it 20deg
+i'd start with 17 for "static" timing
+you could also use a timing light and run it at 6KRPM
+but i don't think that bike has an ignition advance so the timing should be 20 degrees regardless of RPM
+the problem is that too much advance can cause extra heat on the piston and will give you a hole in the crown
+
+so once i find tdc, make sure its set to 20 degrees using that degree wheel thing. too much advance? like if it were more than 20 degrees that would cause extra heat?
+yes
+you got the idea
+you can run it with too much advance for a while but you should check the insulator on the plug for little balls of aluminum to tell if you
+'re over heating the pison
+
+i think so.  and i need to make sure the points are OPEN at 20 degrees, yes? both forward and backward?
+forward
+Before TDC
+use 1/2 way between the forward stop and backward stop to find tdc
+
+so then the other silly question, if its over 20 degrees and needs to be adjusted, what do you adjust? is there a bolt or something?
+then measure 20deg before that
+there's usually a plate that the whole points assembly is bolted to
+
+oh. forward only. got it. 20 deg before tdc moving forward. check.
+loosen the plate and rotate it
+it's very fiddly
+
+ok, that makes sense. like i said, havent taken a good look at it yet.
+
