@@ -9,7 +9,9 @@
 Jonah's Minecraft Server
 </div>
 <script language="javascript">
-AWS.config.update({accessKeyId: 'AKIAISPXWWV4Y572QH2Q', secretAccessKey: '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'});
+AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: 'us-east-1:b99a5c3f-15e5-4d59-b7dd-ae89777ddd63',
+});
 AWS.config.region='us-east-1';
 var cloudwatch = new AWS.CloudWatch();
 var alarms= { AlarmNames: [ 'awsroute53-IsMinecraftUp-High-Health-Check-Status' ]};
