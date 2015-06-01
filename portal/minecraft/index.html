@@ -1,12 +1,14 @@
 <html>
-<head>
+<head>    
+    <link rel="stylesheet" href="../styles/styles.css" type="text/css">
+
 </head>
 <body>
 <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.20.min.js"></script>
 <h1>Server Status</h1>
 
 <div id="elliots" class="alarm_state">
-Jonah's Minecraft Server
+Jonah's Minecraft Servers
 </div>
 <script language="javascript">
 AWS.config.update({accessKeyId: 'AKIAISPXWWV4Y572QH2Q', secretAccessKey: '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'});
@@ -38,5 +40,16 @@ colorServerState(document.getElementById("elliots"),colorElement);
 
 
 </script>
+
+
+<table>
+    <tr><td><img src="minecraft/images/mcicon.jpg" class="servericon"/></td><td>minecraft.jonahperez.com</td><td>Vanilla Minecraft server</td></tr>
+    <tr><td><img src="minecraft/images/twilight.jpg" class="servericon"/></td><td>twilight.jonahperez.com</td><td>Heavily modified server</td></tr>
+    <tr><td><img src="minecraft/images/lyra.jpg" alt="" class="servericon"/></td><td>lyra.jonahperez.com</td><td>Lyra's Server</td></tr>    
+</table>
+
+<a href="minecraft/mods.html">Mods and instructions</a>
+
+
 </body>
 </html>
