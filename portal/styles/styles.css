@@ -20,3 +20,8 @@ td {
     border: solid thin black ;
     text-align: center;
 }
+
+
+   OL { counter-reset: item;  }
+   LI { display: block }
+   LI:before { content: counters(item, ".") " "; counter-increment: item }
