@@ -12,6 +12,10 @@ and open the template in the editor.
     width: 127px;
     height: 127px;
 }
+.powericon {
+    width: 40px;
+    height: 40px;
+}
 .smallicon {
     width: 64px;
     height: 64px;
@@ -20,8 +24,3 @@ td {
     border: solid thin black ;
     text-align: center;
 }
-
-
-   OL { counter-reset: item;  }
-   LI { display: block }
-   LI:before { content: counters(item, ".") " "; counter-increment: item }

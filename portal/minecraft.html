@@ -1,6 +1,6 @@
 <html>
 <head>    
-    <link rel="stylesheet" href="../styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
 
 </head>
 <body>
@@ -18,7 +18,7 @@ AWS.config.region='us-east-1';
 var cloudwatch = new AWS.CloudWatch();
 var alarms= { AlarmNames: [ 'awsroute53-IsMinecraftUp-High-Health-Check-Status' ]};
 
-function colorServerState (element,  callback) {
+function showServerState (element,  callback) {
         cloudwatch.describeAlarms(alarms, function(err, data)
                 {
                         if (err) console.log(err, err.stack); // an error occured
@@ -29,29 +29,31 @@ function colorServerState (element,  callback) {
         )
 };
 
+function
 
-function colorElement(element, state) {
-	if(state == "OK") {
-		element.style.color = "green";
+function setImage(element, state) {
+	if(state === "OK") {
+		element.innerHTML="on";
 	} else {
-		element.style.color = "red";
+		element.innerHTML="off";
 	}
 }
-
-colorServerState(document.getElementById("elliots"),colorElement);
 
 
 </script>
 
 
-<table>
-    <tr><td><img src="images/mcicon.jpg" class="servericon"/></td><td>minecraft.jonahperez.com</td><td>Vanilla Minecraft server</td></tr>
-    <tr><td><img src="images/twilight.jpg" class="servericon"/></td><td>twilight.jonahperez.com</td><td>Heavily modified server</td></tr>
-    <tr><td><img src="images/lyra.jpg" alt="" class="servericon"/></td><td>lyra.jonahperez.com</td><td>Lyra's Server</td></tr>    
+<table>   
+    <tr><td><img src="images/mcicon.jpg" class="servericon"/></td><td>minecraft.jonahperez.com</td><td>Vanilla Minecraft server</td><td><div id="minecraftstate"/></td></tr>
+    
+    <tr><td><img src="images/twilight.jpg" class="servericon"/></td><td>twilight.jonahperez.com</td><td>Heavily modified server</td><td><img class="powericon" src="" alt=""/></td></tr>
+    <tr><td><img src="images/lyra.jpg" alt="" class="servericon"/></td><td>lyra.jonahperez.com</td><td>Lyra's Server</td><td><img class="powericon" src="" alt=""/></td></tr>    
 </table>
 
 <a href="mods.html">Mods and instructions</a>
-
+<script type="text/javascript">
+    showServerState(document.getElementById("minecraftstate"),setImage);
+</script>
 
 </body>
 </html>
