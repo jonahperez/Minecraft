@@ -5,6 +5,7 @@ repo_upgrade: all
 packages:
  - screen
  - tree
+ - awslogs
 
 runcmd:
  - useradd minecraft
