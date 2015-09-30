@@ -3,12 +3,16 @@ repo_update: true
 repo_upgrade: all
 
 packages:
+ - perl-Sys-Syslog
+ - perl-LWP-Protocol-https
+ - perl-DateTime
  - screen
+ - jq
  - tree
  - awslogs
 
 runcmd:
  - useradd minecraft
- - aws s3 cp s3://jonahperez.com.minecraft/bootstrap.sh /root --region us-west-2
+ - aws s3 cp s3://jonahperez.com.minecraft/servers/vanilla_bootstrap.sh /root/bootstrap.sh --region us-west-2
  - chmod u+x /root/bootstrap.sh
  - /root/bootstrap.sh
